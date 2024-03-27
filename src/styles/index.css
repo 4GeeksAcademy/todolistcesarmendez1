@@ -10,3 +10,44 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background: rgb(20, 9, 228);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,9,85,1) 0%, rgba(0,28,111,1) 100%, rgba(0,65,255,1) 100%);
+}
+h1{
+    color:white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100vh;
+    padding-top: 3%;
+}
+
+li {
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

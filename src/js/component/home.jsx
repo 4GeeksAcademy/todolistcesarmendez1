@@ -22,22 +22,22 @@ const Home = () => {
 	}
 	return (
 		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
+			<h1 className="text-center mt-5">Aqui tu lista de tareas, César</h1>
 			<div className="mb-3">
-				<label htmlFor="exampleFormControlInput1" className="form-label">To do list</label>
+				<label htmlFor="exampleFormControlInput1" className="form-label"><strong>To do list</strong></label>
 				<input type="text"  className="form-control" id="exampleFormControlInput1" placeholder="Agregar tarea"  onKeyUp={(e) => { imput(e) }} />
 			</div>
-			<ol>
+			<ul>
 				{lista.map((item, index) => {
 					return (
-						<li key={index}>
-							{item}
-							<button onClick={()=>borrar(index)}>
+						<li key={index} className="d-flex justify-content-between">
+							{index+1}- {item}    
+							<button  onClick={()=>borrar(index)}>
 								x
 							</button>
 						</li>)
 				})}
-			</ol>
+			</ul>
 		</div>
 	);
 };
